@@ -7,9 +7,12 @@
 :root {
     --backgroundlight: #1B512D;
     --backgrounddark: #1F271B;
-    --textcolor: #8AA399;
+    --textcolor: #c5cbdd;
 }
 
+.header {
+    background-color: var(--backgroundlight);
+}
 .header h1 {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
@@ -24,12 +27,25 @@
     margin-right: 20px;
     float: right;
     font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    
 }
 .header ul {
     list-style-type: none;
 }
+ 
+.header ul li {
+    display:inline-block;
+    
+}
 
-
+.design {
+    width: 800px;
+    height: 100px;
+    background-image: url(./images/Green\ Tile.jpg);
+    background-size: cover;
+    background-position: center;
+}
 body {
     background-color: var(--backgrounddark);
     color: var(--textcolor);
