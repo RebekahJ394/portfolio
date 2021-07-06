@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --backgroundlight: #1B512D;
+    --backgrounddark: #1F271B;
+    --textcolor: #8AA399;
+}
+
+.header h1 {
+    font-size: 65px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#MiniBio {
+    margin-left: 10px;
+    padding-left: 5px
+}
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-size: 25px;
+}
+.header ul {
+    list-style-type: none;
+}
+
+
+body {
+    background-color: var(--backgrounddark);
+    color: var(--textcolor);
+}
+
+
+.AboutMe {
+    padding: 20px 20px 20px 0px;
+}
+#HTML {
+    display: flex;
+    width: 50%;
+}
