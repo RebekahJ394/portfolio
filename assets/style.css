@@ -5,13 +5,14 @@
 }
 
 :root {
-    --backgroundlight: #1B512D;
-    --backgrounddark: #1F271B;
+    --backgroundlight: #b9882d;
+    --backgrounddark: #3a4d31;
     --textcolor: #c5cbdd;
 }
 
 .header {
     background-color: var(--backgroundlight);
+    font: var(--textcolor);
 }
 .header h1 {
     font-size: 65px;
@@ -21,31 +22,35 @@
 #MiniBio {
     margin-left: 10px;
     padding-left: 5px
+    font-family: 'Dancing Script', cursive;
 }
 .header div {
-    padding-top: 15px;
+    padding: 6px 12px;
     margin-right: 20px;
-    float: right;
+    float: top;
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
     
 }
 .header ul {
     list-style-type: none;
+    display: inline-block;
+    text-align: center;
 }
  
 .header ul li {
-    display:inline-block;
+    display:inline;
+    text-align: center;
     
 }
 
 .design {
-    width: 800px;
-    height: 100px;
-    background-image: url(./images/Green\ Tile.jpg);
-    background-size: cover;
+    height: 200px;
+    margin-bottom: 25px;
+    background-image: url('../assets/images/Green\ Tile.jpg');
     background-position: center;
 }
+
 body {
     background-color: var(--backgrounddark);
     color: var(--textcolor);
@@ -53,9 +58,29 @@ body {
 
 
 .AboutMe {
-    padding: 20px 20px 20px 0px;
+    text-align: center;
+    padding-top: 70px;
 }
-#HTML {
+#work1text {
+    padding-top: 75px;
+
+}
+#HTML,
+.floatright,
+.floatleft {
     display: flex;
+    flex-wrap: wrap;
     width: 50%;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 10px;
+    border: solid 10px darkgrey;
+    
+}
+
+.contactinfo {
+    display: inline-block;
+    position: center;
+    display: flex;
+    flex-wrap: wrap;
 }
