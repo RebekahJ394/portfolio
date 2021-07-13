@@ -12,29 +12,33 @@
 
 .header {
     background-color: var(--backgroundlight);
+    height: 125px;
     font: var(--textcolor);
 }
 .header h1 {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
+    float: left;
+
 }
 
 #MiniBio {
     margin-left: 10px;
-    padding-left: 5px
-    font-family: 'Dancing Script', cursive;
+    padding-left: 5px;
+    float: left;
 }
 .header div {
     padding: 6px 12px;
     margin-right: 20px;
-    float: top;
+    float: right;
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
-    
+    background-color: var(--backgroundlight);
 }
+
 .header ul {
     list-style-type: none;
-    display: inline-block;
+    display: inline;
     text-align: center;
 }
  
@@ -45,6 +49,8 @@
 }
 
 .design {
+    padding-top: 50px;
+    margin: auto;
     height: 200px;
     margin-bottom: 25px;
     background-image: url('../assets/images/Green\ Tile.jpg');
@@ -59,10 +65,20 @@ body {
 
 .AboutMe {
     text-align: center;
-    padding-top: 70px;
+    padding: 25px;
+    border: solid 5px gray;
+    border-radius: 10px;
 }
-#work1text {
-    padding-top: 75px;
+
+.AboutMe h2 {
+    padding-bottom: 20px;
+
+}
+.imagetext {
+    position: absolute;
+    left: 260px;
+    padding-top: 220px;
+   
 
 }
 #HTML,
@@ -75,12 +91,19 @@ body {
     margin-right:auto;
     border-radius: 10px;
     border: solid 10px darkgrey;
-    
+    height: 50%;
 }
 
-.contactinfo {
-    display: inline-block;
-    position: center;
+.ContactMe h2 {
+    font-size: 30px;
+    padding: auto;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
+}
+
+.ContactMe ul li{
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    font: var(--textcolor);
 }
