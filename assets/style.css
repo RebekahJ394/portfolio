@@ -5,9 +5,9 @@
 }
 
 :root {
-    --backgroundlight: #b9882d;
-    --backgrounddark: #3a4d31;
-    --textcolor: #c5cbdd;
+    --backgroundlight: #EDD3C4;
+    --backgrounddark: #714955;
+    --textcolor: #d8ab96;
 }
 
 .header {
@@ -18,11 +18,12 @@
 .header h1 {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
-    float: left;
+    /* float: left; */
 
 }
 
 #MiniBio {
+    
     margin-left: 10px;
     padding-left: 5px;
     float: left;
@@ -34,26 +35,30 @@
     font-size: 25px;
     font-family: 'Dancing Script', cursive;
     background-color: var(--backgroundlight);
+    text-decoration: none; color: var(--textcolor);
+    margin-bottom: 50px;
 }
 
 .header ul {
     list-style-type: none;
     display: inline;
     text-align: center;
+    text-decoration: none;
 }
  
 .header ul li {
     display:inline;
     text-align: center;
+    text-decoration: none;
     
 }
 
 .design {
-    padding-top: 50px;
-    margin: auto;
+    /* padding-top: 50px; */
+    /* margin: auto; */
     height: 200px;
-    margin-bottom: 25px;
-    background-image: url('../assets/images/Green\ Tile.jpg');
+    /* margin-bottom: 25px; */
+    background-image: url('../assets/images/Pink\ texture.jpg');
     background-position: center;
 }
 
@@ -62,7 +67,11 @@ body {
     color: var(--textcolor);
 }
 
-
+.titleSection  {
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
 .AboutMe {
     text-align: center;
     padding: 25px;
@@ -76,22 +85,30 @@ body {
 }
 .imagetext {
     position: absolute;
-    left: 260px;
-    padding-top: 220px;
-   
+    /* left: 260px; */
+    /* margin-top: 220px; */
+    background-color: white;
+    border:solid 5px #c2b08f;
+    font: 20px;
+   border-radius: 5px;
 
 }
 #HTML,
 .floatright,
 .floatleft {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
+    position: relative;
     width: 50%;
     margin-left: auto;
     margin-right:auto;
     border-radius: 10px;
-    border: solid 10px darkgrey;
+    border: double 10px darkgrey;
     height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+   
 }
 
 .ContactMe h2 {
