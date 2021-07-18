@@ -129,6 +129,7 @@ section div {
     margin-right:auto;
     border-radius: 10px;
     border: double 10px var(--backgroundlight);
+    margin-top: 20px;
 }
 
 #work0text,
@@ -137,12 +138,15 @@ section div {
     position: absolute;
     width: 100%;
     text-align: center;
-    background-color: var(--textcolor);
+    /* background-color: var(--textcolor); */
     color: var(--backgrounddark);
-    top:20%;
-    font-size: 20px;
+    top:85%;
+    right: 10%;
+    font-size: 30px;
 }
-
+#work0text {
+    right: 18%;
+}
 }
 .ContactMe {
     margin-top: 375px;
