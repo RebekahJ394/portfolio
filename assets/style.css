@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
 }
@@ -13,30 +13,41 @@
 .header {
     background-color: var(--backgroundlight);
     height: 125px;
-    font: var(--textcolor);
+    color: var(--backgrounddark);
 }
+
+/* section,
+footer {
+    margin-top: 100px; */
+
 .header h1 {
     font-size: 65px;
     font-family: 'Dancing Script', cursive;
-    /* float: left; */
-
 }
 
 #MiniBio {
-    
     margin-left: 10px;
     padding-left: 5px;
     float: left;
 }
+.header a {
+    text-decoration: none;
+    color: var(--backgrounddark);
+}
+
+.header a:hover {
+    color: var(--backgrounddark);
+    background-color:var(--textcolor);
+}
 .header div {
-    padding: 6px 12px;
+    display: inline;
     margin-right: 20px;
     float: right;
-    font-size: 25px;
+    font-size: 40px;
     font-family: 'Dancing Script', cursive;
     background-color: var(--backgroundlight);
-    text-decoration: none; color: var(--textcolor);
-    margin-bottom: 50px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .header ul {
@@ -45,19 +56,16 @@
     text-align: center;
     text-decoration: none;
 }
- 
+
 .header ul li {
     display:inline;
     text-align: center;
     text-decoration: none;
-    
+
 }
 
 .design {
-    /* padding-top: 50px; */
-    /* margin: auto; */
     height: 200px;
-    /* margin-bottom: 25px; */
     background-image: url('../assets/images/Pink\ texture.jpg');
     background-position: center;
 }
@@ -71,6 +79,7 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 40px;
+    text-decoration: underline;
 }
 .AboutMe {
     text-align: center;
@@ -83,44 +92,87 @@ body {
     padding-bottom: 20px;
 
 }
-.imagetext {
-    position: absolute;
-    /* left: 260px; */
-    /* margin-top: 220px; */
-    background-color: white;
-    border:solid 5px #c2b08f;
-    font: 20px;
-   border-radius: 5px;
+ #HTML {
+     display: block;
+     position: relative;
+     width:50%;
+     height:50%;
+     margin-left: auto;
+     margin-right: auto;
+ }
 
+.floatright {
+    /* display: flex;
+    float: right; */
+    width:40%;
+    height: 40%;
+    margin-right: 20px;
+}
+.floatleft {
+    /* display: flex;
+    float: left; */
+    width: 40%;
+    height: 40%;
+    margin-left: 20px;
+}
+
+section div {
+    position: relative;
 }
 #HTML,
 .floatright,
 .floatleft {
     display: block;
     flex-wrap: wrap;
-    position: relative;
-    width: 50%;
+    /* position: relative; */
     margin-left: auto;
     margin-right:auto;
     border-radius: 10px;
-    border: double 10px darkgrey;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-   
+    border: double 10px var(--backgroundlight);
 }
 
+#work0text,
+#work1text,
+#work2text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: var(--textcolor);
+    color: var(--backgrounddark);
+    top:20%;
+    font-size: 20px;
+}
+
+}
+.ContactMe {
+    margin-top: 375px;
+}
 .ContactMe h2 {
-    font-size: 30px;
     padding: auto;
     margin: auto;
-    display: flex;
+    
 }
 
 .ContactMe ul li{
-    display: inline-block;
-    text-align: center;
-    font-size: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: center; align-items: center;
+    font-size: 40px;
     font: var(--textcolor);
+    padding: 10px;
+    
 }
+
+.ContactMe a {
+    text-decoration: none;
+    color: var(--textcolor);
+}
+
+.ContactMe a:hover {
+    color: #AAAED2;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }}
