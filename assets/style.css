@@ -1,5 +1,4 @@
 * {
-    /* box-sizing: border-box; */
     padding: 0;
     margin: 0;
 }
@@ -15,10 +14,6 @@
     height: 125px;
     color: var(--backgrounddark);
 }
-
-/* section,
-footer {
-    margin-top: 100px; */
 
 .header h1 {
     font-size: 65px;
@@ -68,6 +63,7 @@ footer {
     height: 200px;
     background-image: url('../assets/images/Pink\ texture.jpg');
     background-position: center;
+    width: 100%;
 }
 
 body {
@@ -84,8 +80,6 @@ body {
 .AboutMe {
     text-align: center;
     padding: 25px;
-    border: solid 5px gray;
-    border-radius: 10px;
 }
 
 .AboutMe h2 {
@@ -102,15 +96,11 @@ body {
  }
 
 .floatright {
-    /* display: flex;
-    float: right; */
     width:40%;
     height: 40%;
     margin-right: 20px;
 }
 .floatleft {
-    /* display: flex;
-    float: left; */
     width: 40%;
     height: 40%;
     margin-left: 20px;
@@ -124,7 +114,6 @@ section div {
 .floatleft {
     display: block;
     flex-wrap: wrap;
-    /* position: relative; */
     margin-left: auto;
     margin-right:auto;
     border-radius: 10px;
@@ -138,7 +127,6 @@ section div {
     position: absolute;
     width: 100%;
     text-align: center;
-    /* background-color: var(--textcolor); */
     color: var(--backgrounddark);
     top:85%;
     right: 10%;
@@ -147,9 +135,13 @@ section div {
 #work0text {
     right: 18%;
 }
+
+h3 span {
+    background-color: var(--backgroundlight);
 }
+
 .ContactMe {
-    margin-top: 375px;
+    margin-top: 20px;
 }
 .ContactMe h2 {
     padding: auto;
@@ -176,7 +168,39 @@ section div {
     color: #AAAED2;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-      flex-direction: column;
-    }}
+@media screen and (max-width: 620px) {
+    body, section, footer {
+        background-color: var(--backgroundlight);
+        color: var(--backgrounddark);
+    }
+    .design, .header, #MiniBio {
+        background-color: var(--backgrounddark);
+        color: var(--textcolor);
+        text-align: center;
+        float: none;
+    }
+    header div {
+        text-align: center;
+        margin-top: 5px;
+        background-color: var(--backgrounddark);
+    }
+    header ul li {
+        font-size: 75%;
+        
+    }
+    .Work {
+        background-color: var(--backgroundlight);
+
+    }
+    .ContactMe a {
+        color: var(--backgrounddark);
+    }
+    #work0text,  #work1text, #work2text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        top: auto;
+        right: auto;
+        font-size: 95%;
+    }
+}
